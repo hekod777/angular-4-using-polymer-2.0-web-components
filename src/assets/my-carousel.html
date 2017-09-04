@@ -1,0 +1,101 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<!-- Load the Polymer.Element base class -->
+<link rel="import" href="bower_components/polymer/polymer-element.html">
+<link rel="import" href="my-mixin.html">
+<link rel="import" href="bower_components/paper-radio-button/paper-radio-button.html">
+<link rel="import" href="bower_components/paper-input/paper-input.html">
+
+<dom-module id="my-carousel">
+  <template>
+
+    <!-- Styles MUST be inside template -->
+    <style>
+
+      .parent-button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+
+      .parent-button:hover {background-color: #3e8e41}
+
+      .parent-button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+
+      .from-angular{
+        color:#FF0000;
+      }
+
+
+
+      :host {
+        display: block;
+        position: relative;
+        overflow: hidden;
+      }
+
+      div > ::slotted(:not([selected])){
+        display: none;
+      }
+
+      #prevBtn{
+        left:12px;
+      }
+
+      #nextBtn{
+        right:12px;
+      }
+
+      button[disabled]{
+        opacity: 0.4;
+      }
+
+    </style>
+
+    <hr/>
+    <h3> between two hr lines, it is a polymer 2.0 web component</h3>
+    <paper-radio-button> this is a paper radio button inside a web component</paper-radio-button>
+    <div>
+      <paper-input label="this is a paper input inside the same web component"> </paper-input>
+    </div>
+
+  </template>
+
+  <script>
+
+    class MyCarousel extends MyMixin(Polymer.Element) {
+
+      static get is() { return 'my-carousel' }
+
+      ready(){
+        super.ready();
+        requestAnimationFrame(this._installListeners.bind(this));
+      }
+    }
+
+    // Register custom element definition using standard platform API
+    customElements.define(MyCarousel.is, MyCarousel);
+
+  </script>
+</dom-module>

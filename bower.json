@@ -1,0 +1,26 @@
+{
+  "name": "demo",
+  "description": "",
+  "main": "",
+  "authors": [
+    "hekod777 <lifetimeinc@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.2",
+    "paper-input": "^2.0.2",
+    "paper-button": "^2.0.0",
+    "paper-menu-button": "^2.0.0",
+    "iron-input": "^2.0.0",
+    "iron-form": "^2.0.0",
+    "paper-radio-button": "^2.0.0"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "mediator-js",
+        "scope": null,
+        "escapedName": "mediator-js",
+        "name": "mediator-js",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/koddyho/GitHub/demo"
+    ]
+  ],
+  "_from": "mediator-js@latest",
+  "_id": "mediator-js@0.9.9",
+  "_inCache": true,
+  "_location": "/mediator-js",
+  "_nodeVersion": "0.10.36",
+  "_npmUser": {
+    "name": "ajacksified",
+    "email": "ajacksified@gmail.com"
+  },
+  "_npmVersion": "2.3.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "mediator-js",
+    "scope": null,
+    "escapedName": "mediator-js",
+    "name": "mediator-js",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/mediator-js/-/mediator-js-0.9.9.tgz",
+  "_shasum": "497e29d02dfb14738b512eccd6f93286b2c365db",
+  "_shrinkwrap": null,
+  "_spec": "mediator-js",
+  "_where": "/Users/koddyho/GitHub/demo",
+  "author": {
+    "name": "Jack Lawson",
+    "email": "jlawson@olivinelabs.com"
+  },
+  "bugs": {
+    "url": "https://github.com/ajacksified/Mediator.js/issues"
+  },
+  "dependencies": {},
+  "description": "Flexible event management. Implementation of the mediator pattern.",
+  "devDependencies": {
+    "chai": "1.4.x",
+    "mocha": "1.7.x",
+    "sinon": "1.5.x",
+    "sinon-chai": "2.3.0",
+    "sinon-mocha": "0.0.3"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "497e29d02dfb14738b512eccd6f93286b2c365db",
+    "tarball": "https://registry.npmjs.org/mediator-js/-/mediator-js-0.9.9.tgz"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "gitHead": "6b4e43431735d74480ec32154777a9071a1c3193",
+  "homepage": "https://github.com/ajacksified/Mediator.js",
+  "keywords": [
+    "pubsub",
+    "events",
+    "mediator",
+    "publish",
+    "subscribe",
+    "design patterns"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "main": "index",
+  "maintainers": [
+    {
+      "name": "ajacksified",
+      "email": "ajacksified@gmail.com"
+    }
+  ],
+  "name": "mediator-js",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ajacksified/Mediator.js.git"
+  },
+  "scripts": {
+    "test": "mocha",
+    "test_with_coverage": "mocha && MEDIATOR_JS_COV=1 mocha -R html-cov > coverage.html"
+  },
+  "version": "0.9.9"
+}
